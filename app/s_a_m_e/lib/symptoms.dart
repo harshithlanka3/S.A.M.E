@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:s_a_m_e/admin.dart';
 
 class Symptoms extends StatelessWidget {
   const Symptoms({super.key});
@@ -12,9 +13,13 @@ class Symptoms extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.pop(context);
+            // Navigator.pop(context);
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Admin()),
+            );
           },
-          child: const Text('Go back!'),
+          child: const Text('Add another symptom!'),
         ),
       ),
     );
