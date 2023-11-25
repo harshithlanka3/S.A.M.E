@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:s_a_m_e/add.dart';
 import 'package:s_a_m_e/colors.dart';
-import 'package:s_a_m_e/Symptoms.dart';
 
 class Admin extends StatelessWidget {
   const Admin({super.key});
@@ -12,28 +11,25 @@ class Admin extends StatelessWidget {
       appBar: AppBar(
         title: const Text('S.A.M.E'),
       ),
-      
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget> [
-          const Text('Update Symptoms'),
-          const Text('Hello Admin User!'),
-          ElevatedButton(
-            style: const ButtonStyle(
-              backgroundColor: MaterialStatePropertyAll<Color>(navy),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+            const Text('Update Symptoms'),
+            const Text('Hello Admin User!'),
+            ElevatedButton(
+              style: const ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll<Color>(navy),
+              ),
+              child: const Text('Add Symptom'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Add()),
+                );
+              },
             ),
-            child: const Text('Add Symptom'),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Add()),
-              );
-            },
-          ),
-        ]
-        )
-      ),
+          ])),
     );
   }
 }

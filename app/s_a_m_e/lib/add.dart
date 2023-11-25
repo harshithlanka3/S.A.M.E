@@ -17,8 +17,8 @@ class Add extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget> [
           const Text('Add Symptom, Chief Complaint, and Diagnosis'),
-          Padding(padding: EdgeInsets.all(10.0)),
-          TextField(
+          const Padding(padding: EdgeInsets.all(10.0)),
+          const TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder (
                 borderSide: BorderSide(
@@ -30,8 +30,8 @@ class Add extends StatelessWidget {
               hintText: 'Enter Symptom Name'
             ),
           ),
-          Padding(padding: EdgeInsets.all(8.0)),
-          TextField(
+          const Padding(padding: EdgeInsets.all(8.0)),
+          const TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder (
                 borderSide: BorderSide(
@@ -43,7 +43,7 @@ class Add extends StatelessWidget {
               hintText: 'Enter Complaint Category'
             ),
           ),
-          Padding(padding: EdgeInsets.all(16.0)),
+          const Padding(padding: EdgeInsets.all(16.0)),
           ElevatedButton(
             style: const ButtonStyle(
               backgroundColor: MaterialStatePropertyAll<Color>(navy),

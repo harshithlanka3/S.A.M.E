@@ -28,7 +28,7 @@ import 'admin.dart';
             fontWeight: FontWeight.bold)
         )
       ),
-      home: Admin(),
+      home: const Admin(),
       );
    }
  }
