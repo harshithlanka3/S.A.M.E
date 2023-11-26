@@ -12,10 +12,10 @@ runApp(MaterialApp(
 
 class symptomsBox extends StatefulWidget {
 @override
-_HomePageState createState() => _HomePageState();
+_symptomsBoxState createState() => _symptomsBoxState();
 }
 
-class _HomePageState extends State<symptomsBox> {
+class _symptomsBoxState extends State<symptomsBox> {
 
 // value set to false
 bool _value = false;
@@ -51,13 +51,15 @@ Widget build(BuildContext context) {
       ), //AppBar
 
       body: SizedBox(
-        child: Center(
+        child: Align(
+          alignment: Alignment.topCenter,
           child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget> [
-              const Text('hi'),
+              const Text('List of Symptoms', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0)),
+              const SizedBox(height: 10),
+              const Divider(height: 0),
               const SizedBox(height: 10),
               Container(
                 decoration: BoxDecoration(
