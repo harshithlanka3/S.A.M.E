@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:s_a_m_e/colors.dart';
-import 'package:s_a_m_e/Symptoms.dart';
+import 'package:s_a_m_e/symptoms.dart';
+// import 'package:s_a_m_e/symptomsBox.dart';
 
 class Admin extends StatelessWidget {
   const Admin({super.key});
@@ -26,7 +27,7 @@ class Admin extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Symptoms()),
+                MaterialPageRoute(builder: (context) => symptoms()),
               );
             },
           ),

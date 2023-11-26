@@ -14,7 +14,7 @@ import 'admin.dart';
       return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Software Aid for Medical Emergencies',
-      theme: ThemeData(
+      theme: ThemeData( // maybe create button theme?
         primarySwatch: teal,
         fontFamily: "PT Serif",
         scaffoldBackgroundColor: background,

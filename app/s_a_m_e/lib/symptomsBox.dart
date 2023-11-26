@@ -6,16 +6,16 @@ void main() {
 runApp(MaterialApp(
 	
 	// runApp method
-	home: symptoms(),
+	home: symptomsBox(),
 )); //MaterialApp
 }
 
-class symptoms extends StatefulWidget {
+class symptomsBox extends StatefulWidget {
 @override
-_symptomsState createState() => _symptomsState();
+_HomePageState createState() => _HomePageState();
 }
 
-class _symptomsState extends State<symptoms> {
+class _HomePageState extends State<symptomsBox> {
 
 // value set to false
 bool _value = false;
